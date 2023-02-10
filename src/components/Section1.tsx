@@ -1,12 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import Button from "./common/Button";
 
 const Section1 = () => {
   return (
     <section className="border-b border-white/10">
-      <div className="border-x border-white/10 py-[42px] w-[1488px] min-h-[570px] mx-auto">
+      <div className="relative border-x border-white/10 py-[42px] md:w-[1488px] w-[90%] md:min-h-[570px] mx-auto before:bg-cornerTriangle before:w-[12px] before:h-[11px] before:bg-no-repeat before:bg-contain before:-top-[5px] before:-left-[6px] before:absolute after:bg-cornerTriangle after:w-[12px] after:h-[11px] after:bg-no-repeat after:bg-contain after:-top-[5px] after:-right-[7px] after:absolute">
         <div className="w-[90%] mx-auto flex justify-between">
-          <div className="w-[410px]">
+          <div className="md:w-[410px]">
             <h1 className="text-[42px] mt-[95px] mb-7 font-bold leading-[50px]">
               Get Paid For Watching Movies
             </h1>
@@ -18,9 +19,9 @@ const Section1 = () => {
               0x2940f8263f49e46fd2E7Fb2e74b46A2a60F6E8E2
             </p>
             <div className="flex justify-between items-center mt-7">
-              <button className="w-[150px] h-10 bg-gradient-to-r from-[#D98639] to-[#FF3D00] rounded-lg font-sem">
-                App
-              </button>
+              <div className="md:w-[150px] md:h-[42px]">
+                <Button title="App" />
+              </div>
               <div className="flex justify-between gap-3">
                 <Image
                   src="/images/googlePlay.png"
@@ -39,20 +40,27 @@ const Section1 = () => {
               </div>
             </div>
           </div>
-          <div className="flex w-[492px] justify-center grow">
+          <div className="relative flex md:w-[492px] justify-center grow">
+            <Image
+              src="/images/bgLava.png"
+              alt=""
+              width={500}
+              height={500}
+              className="absolute left-[45%]"
+            />
             <Image
               src="/images/appImage1.png"
               alt=""
               width={500}
               height={500}
-              className="translate-x-[480px] animate-bounceLeft"
+              className="absolute left-[480px] animate-bouLeft"
             />
             <Image
               src="/images/appImage2.png"
               alt=""
               width={500}
               height={500}
-              className="-translate-x-10 animate-bounceRight"
+              className="absolute -right-10 animate-bouRight"
             />
           </div>
         </div>

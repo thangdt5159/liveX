@@ -3,7 +3,6 @@ import { FAQData } from "../constant";
 
 const FAQItems = ({ data }: any) => {
   const [isExpand, setIsExpand] = useState(false);
-  const [activeTab, setActiveTab] = useState(0);
 
   const handleClick = () => {
     setIsExpand(!isExpand);
@@ -14,7 +13,14 @@ const FAQItems = ({ data }: any) => {
         className="border-t border-white/10 px-[5%] pt-[22px] pb-[17px] text-2xl font-bold cursor-pointer flex justify-between items-center"
         onClick={handleClick}
       >
-        {data.title}
+        <span
+          className={`${
+            isExpand &&
+            "text-transparent bg-clip-text bg-gradient-to-r from-[#D98639] via-[#FF3D00] to-[#D98639] animate-moveBg bg-[200%]"
+          }`}
+        >
+          {data.title}
+        </span>
         <img
           src="/images/down-arrow.png"
           alt=""

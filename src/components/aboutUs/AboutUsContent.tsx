@@ -15,7 +15,7 @@ const AboutUsContent = () => {
   return (
     <div className="w-[410px]">
       <h1 className="text-[42px] font-bold my-8">Why Us?</h1>
-      <div className="text-[13px] text-white/75 leading-4 mb-7">
+      <div className="text-[13px] text-white/75 leading-4 mb-7 min-h-[64px] flex items-center">
         {tabContent}
       </div>
       <div className="grid grid-cols-2">

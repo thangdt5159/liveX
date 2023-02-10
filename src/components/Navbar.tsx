@@ -1,26 +1,36 @@
 import Image from "next/image";
 import React from "react";
+import Button from "./common/Button";
 import { navbarItem } from "./constant";
 
 const Navbar = () => {
   return (
     <section className="border-b border-white/10">
-      <div className="border-x border-white/10 w-[1488px] min-h-[110px] mx-auto flex">
-        <div className="w-[90%] flex justify-between items-center mx-auto">
-          <h1>ICON</h1>
+      <div className="relative border-x border-white/10 md:w-[1488px] w-[90%] min-h-[110px] mx-auto flex">
+        <div className="w-[90%] md:flex justify-between items-center mx-auto">
+          <Image
+            src="/images/navBlur.png"
+            alt=""
+            width={224}
+            height={205}
+            className="absolute -top-[122px] right-[133px]"
+          />
+          <h1 className="w-[162px] h-[38px] bg-white/10 text-center mx-auto mt-9">
+            ICON
+          </h1>
           <div className="flex justify-between font-bold">
             {navbarItem.map((item) => (
               <div
                 key={item.id}
-                className="mr-6 cursor-pointer transition-all duration-500 hover:text-[#D98639]"
+                className="hidden md:block md:mr-6 md:cursor-pointer md:transition-all md:duration-500 md:hover:text-[#D98639]"
               >
                 {item.title}
               </div>
             ))}
           </div>
-          <button className="w-[150px] h-[42px] font-semibold rounded-lg bg-gradient-to-r from-[#D98639] to-[#FF3D00]">
-            Go To App
-          </button>
+          <div className="md:w-[150px] md:h-[42px] w-[170px] h-[42px] mx-auto my-6">
+            <Button title="Go To App" />
+          </div>
         </div>
       </div>
     </section>
