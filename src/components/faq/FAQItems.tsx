@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useState } from "react";
 import { FAQData } from "../constant";
 
@@ -21,9 +22,11 @@ const FAQItems = ({ data }: any) => {
         >
           {data.title}
         </span>
-        <img
+        <Image
           src="/images/down-arrow.png"
           alt=""
+          width={20}
+          height={20}
           className={`${isExpand && "rotate-180"} transition-all select-none`}
         />
       </div>

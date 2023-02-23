@@ -16,8 +16,8 @@ export default function Home() {
       <Navbar />
       <Landing />
       <Banner />
-      <Section1 />
-      <AboutUs />
+      {/* <Section1 /> */}
+      {/* <AboutUs /> */}
       <Roadmap />
       <Staking />
       <Swap />

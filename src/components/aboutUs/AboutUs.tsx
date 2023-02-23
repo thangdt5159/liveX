@@ -11,17 +11,17 @@ const AboutUs = () => {
           alt=""
           width={204}
           height={208}
-          className="hidden md:absolute md:-top-[100px] md:left-[500px]"
+          className="hidden md:block md:absolute md:-top-[100px] md:left-[500px]"
         />
-        <div className="w-[90%] mx-auto flex justify-between items-center">
+        <div className="w-[90%] mx-auto md:flex justify-between items-center text-center md:text-start">
           <AboutUsContent />
-          <div className="relative bg-gradient-to-r from-[#D98639] to-[#FF3D00] rounded-lg md:w-[600px] md:h-[293px]">
+          <div className="relative bg-gradient-to-r from-[#D98639] to-[#FF3D00] rounded-lg w-[80%] mx-auto md:mx-0 md:w-[600px] md:h-[293px]">
             <Image
               src="/images/whyBlur2.png"
               alt=""
               width={418}
               height={482}
-              className="hidden md:absolute md:-top-[90px] md:-right-[100px]"
+              className="md:absolute md:-top-[90px] md:-right-[100px]"
             />
           </div>
         </div>

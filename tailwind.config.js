@@ -5,10 +5,12 @@ module.exports = {
     fontFamily: {
       display: ['"grifterbold"', "sans-serif"],
       body: ['"grifterbold"', "sans-serif"],
+      btn: ['"Poppins"', "sans-serif"],
     },
     extend: {
       backgroundImage: {
         cornerTriangle: "url('/images/cornerTriangle.png')",
+        bgLava: "url('/images/bgLava.png')",
       },
       keyframes: {
         bouLeft: {

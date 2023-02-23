@@ -37,17 +37,18 @@ const Landing = () => {
 
         <div className="w-[90%] mx-auto relative">
           <div className="md:w-[55%] mx-auto text-center">
-            <h1 className="text-[60px] font-bold leading-[60px] my-10 text-transparent bg-clip-text bg-gradient-to-r from-[#D98639] via-[#FF3D00] to-[#D98639] animate-moveBg bg-[200%]">
-              Watch Your Favourite Moview & Earn $MVX
+            <h1 className="uppercase text-[60px] font-bold leading-[60px] my-10 text-transparent bg-clip-text bg-gradient-to-r from-[#D98639] via-[#FF3D00] to-[#D98639] animate-moveBg bg-[200%]">
+              Create content and earn $LVX!
             </h1>
             <p className="text-white/75 text-[15px] mb-4">
-              Welcome to Moviex, where we explore the frontier of crypto and
-              tech innovations. This is the DApp allowing you to chill, watch
-              your favorite movie, and get paid in $MVX. Watch to Earn, baby!
+              Welcome to LiveX, where we explore the frontiers of crypto and
+              technology innovations. This is a place where you can relax,
+              create your favorite content and get paid in $LVX. Creative to
+              make money!
             </p>
             <div className="md:w-[320px] w-full mx-auto text-xs font-semibold flex">
               <div className="md:w-[150px] md:h-[42px] w-[48%]">
-                <Button title="Buy $MVX" />
+                <Button title="Buy $LVX" />
               </div>
               <button className="w-[48%] h-[42px] rounded-lg ml-[4%] bg-gradient-to-r from-[#D98639] to-[#FF3D00]">
                 <div className="border border-transparent bg-[#1f2227] h-[40px] w-[98%] leading-[38px] rounded-lg m-auto">
@@ -56,13 +57,15 @@ const Landing = () => {
               </button>
             </div>
           </div>
-          <Image
-            src="/images/landingImage.png"
-            alt=""
-            width={1600}
-            height={1600}
-            className="mt-[42px]"
-          />
+          <div className="landing-image">
+            <Image
+              src="/images/landingImage.png"
+              alt=""
+              width={1600}
+              height={1600}
+              className="mt-[42px] rounded-[12px]"
+            />
+          </div>
         </div>
       </div>
     </section>

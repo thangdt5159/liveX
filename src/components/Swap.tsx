@@ -11,24 +11,24 @@ const Swap = () => {
           alt=""
           width={434}
           height={354}
-          className="absolute top-[85px] right-[230px]"
+          className="hidden md:absolute md:top-[85px] md:right-[230px]"
         />
-        <div className="w-[90%] mx-auto flex justify-between">
-          <div className="md:w-[470px]">
-            <h1 className="text-[42px] font-bold leading-[50px] mt-[78px] mb-8">
+        <div className="w-[90%] mx-auto text-center">
+          <div className="">
+            <h1 className="text-[42px] font-bold leading-[50px] md:mt-[78px] md:mb-8 mb-6">
               Swap
             </h1>
             <p className="text-white/75 text-[13px] leading-4 mb-4">
               Moviex Swap is an Automated Market Maker (AMM). It also serves a
               role as a decentralized exchange and helps our users in trading.
             </p>
-            <div className="md:w-[150px] md:h-[42px]">
+            <div className="w-[150px] h-[42px] mx-auto">
               <Button title="Swap" />
             </div>
           </div>
-          <div className="md:w-[540px] md:h-[403px] bg-white/75 rounded-3xl -rotate-[4.22deg] z-10 flex justify-center items-center">
-            <div className="bg-gradient-to-r from-[#D98639] to-[#FF3D00] md:w-[536px] md:h-[399px] rounded-3xl"></div>
-          </div>
+          {/* <div className="w-[315px] h-[235px] md:w-[540px] md:h-[403px] bg-white/75 rounded-3xl -rotate-[4.22deg] z-10 flex justify-center items-center mt-10 md:mt-0">
+            <div className="bg-gradient-to-r from-[#D98639] to-[#FF3D00] w-[311px] h-[231px] md:w-[536px] md:h-[399px] rounded-3xl"></div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -52,7 +52,7 @@ export const aboutUsData = [
     id: 2,
     title: "Low Taxes 0/4",
     content:
-      "The $MVX token will have low taxes: we are huge advocates of giving back to the community. The taxes on $MVX are 0% for buy transactions and 4% for sell transactions, that will go directly to further project development and ensure suitable marketing.",
+      "The $LVX token will have low taxes: we are huge advocates of giving back to the community. The taxes on $LVX are 0% for buy transactions and 4% for sell transactions, that will go directly to further project development and ensure suitable marketing.",
   },
   {
     id: 3,
@@ -64,7 +64,7 @@ export const aboutUsData = [
     id: 4,
     title: "Ready Utility",
     content:
-      "If you think about the $MVX token utility, it's divided into 4 primary parts that are ready to use: Watch 2 Earn DApp, Swap DApp, Bridge DApp and Staking DApp.",
+      "If you think about the $LVX token utility, it's divided into 4 primary parts that are ready to use: Watch 2 Earn DApp, Swap DApp, Bridge DApp and Staking DApp.",
   },
   {
     id: 5,
@@ -92,7 +92,7 @@ export const roadmapData = [
     id: 2,
     phase1: "Launching the landing page",
     phase2: "Listing on CoinGecko",
-    phase3: "Listing the $MVX token on first CEX",
+    phase3: "Listing the $LVX token on first CEX",
     phase4: "Next token burn",
   },
   {
@@ -114,13 +114,13 @@ export const roadmapData = [
     phase1: "Designing the UX & UI of the app",
     phase2: "Tests of the apps",
     phase3: "Making the token cross-chain",
-    phase4: "$MVX social marketing campaign",
+    phase4: "$LVX social marketing campaign",
   },
   {
     id: 6,
     phase1: "Contract from SAFU developer",
     phase2: "Launching an MVP of the DApps",
-    phase3: "Adding more trading pairs for $MVX",
+    phase3: "Adding more trading pairs for $LVX",
     phase4: "Launch of Movie-NFT Marketplace",
   },
   {
@@ -129,6 +129,137 @@ export const roadmapData = [
     phase2: "Hiring a business manager",
     phase3: "Creating our NFT collection",
     phase4: "Further marketing campaign",
+  },
+];
+
+export const roadmapDataMb = [
+  {
+    id: 1,
+    title: "phase 1",
+  },
+  {
+    id: 2,
+    title: "Launching the SM channels",
+  },
+  {
+    id: 3,
+    title: "Launching the landing page",
+  },
+  {
+    id: 4,
+    title: "First promotional activities",
+  },
+  {
+    id: 5,
+    title: "First cooperation with influencers",
+  },
+  {
+    id: 6,
+    title: "Designing the UX & UI of the app",
+  },
+  {
+    id: 7,
+    title: "Contract from SAFU developer",
+  },
+  {
+    id: 8,
+    title: "Fair Launch on Pinksale",
+  },
+  {
+    id: 9,
+    title: "phase 2",
+  },
+  {
+    id: 10,
+    title: "Listing on CoinmarketCap",
+  },
+  {
+    id: 11,
+    title: "Listing on CoinGecko",
+  },
+  {
+    id: 12,
+    title: "Post-launch marketing",
+  },
+  {
+    id: 13,
+    title: "Token burn",
+  },
+  {
+    id: 14,
+    title: "ests of the apps",
+  },
+  {
+    id: 15,
+    title: "Launching an MVP of the DApps",
+  },
+  {
+    id: 16,
+    title: "Hiring a business manager",
+  },
+  {
+    id: 17,
+    title: "phase 3",
+  },
+  {
+    id: 18,
+    title: "Launching a paid-ads campaign",
+  },
+  {
+    id: 19,
+    title: "Listing the $LVX token on first CEX",
+  },
+  {
+    id: 20,
+    title: "Airdrop for early users",
+  },
+  {
+    id: 21,
+    title: "Launching a new website",
+  },
+  {
+    id: 22,
+    title: "Making the token cross-chain",
+  },
+  {
+    id: 23,
+    title: "Adding more trading pairs for $LVX",
+  },
+  {
+    id: 24,
+    title: "Further marketing campaign",
+  },
+  {
+    id: 25,
+    title: "phase 4",
+  },
+  {
+    id: 26,
+    title: "Visiting the first crypto event",
+  },
+  {
+    id: 27,
+    title: "Next token burn",
+  },
+  {
+    id: 28,
+    title: "New earning features",
+  },
+  {
+    id: 29,
+    title: "Listing on the next CEX",
+  },
+  {
+    id: 30,
+    title: "$LVX social marketing campaign",
+  },
+  {
+    id: 31,
+    title: "Launch of Movie-NFT Marketplace",
+  },
+  {
+    id: 32,
+    title: "Further marketing campaign",
   },
 ];
 
@@ -153,9 +284,9 @@ export const FAQData = [
   },
   {
     id: 4,
-    title: "How can I exchange the earned $MVX tokens?",
+    title: "How can I exchange the earned $LVX tokens?",
     content:
-      "The $MVX token will be listed on the PancakeSwap exchange. With that, all the users using decentralized non-custodial wallets can swap their $MVX for BNB.",
+      "The $LVX token will be listed on the PancakeSwap exchange. With that, all the users using decentralized non-custodial wallets can swap their $LVX for BNB.",
   },
   {
     id: 5,
@@ -167,6 +298,6 @@ export const FAQData = [
     id: 6,
     title: "How does the Bridge app work?",
     content:
-      "The Bridge application provides the possibility of cross-chain transactions, and as a consequence the transport of funds from different networks to the BSC network in order to purchase MVX tokens by interested persons. Bridge simply facilitates the option of investing in our project for people with funds on other networks.",
+      "The Bridge application provides the possibility of cross-chain transactions, and as a consequence the transport of funds from different networks to the BSC network in order to purchase LVX tokens by interested persons. Bridge simply facilitates the option of investing in our project for people with funds on other networks.",
   },
 ];

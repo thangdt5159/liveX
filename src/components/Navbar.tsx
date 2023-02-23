@@ -10,15 +10,22 @@ const Navbar = () => {
         <div className="w-[90%] md:flex justify-between items-center mx-auto">
           <Image
             src="/images/navBlur.png"
-            alt=""
+            alt="LiveX"
             width={224}
             height={205}
             className="absolute -top-[122px] right-[133px]"
           />
-          <h1 className="w-[162px] h-[38px] bg-white/10 text-center mx-auto mt-9">
+          <Image
+            src="/images/logo.png"
+            alt=""
+            width={200}
+            height={200}
+            className="object-contain h-[100px] cursor-pointer"
+          />
+          {/* <h1 className="w-[162px] h-[38px] bg-white/10 text-center mx-auto mt-9">
             ICON
-          </h1>
-          <div className="flex justify-between font-bold">
+          </h1> */}
+          <div className="flex justify-between font-bold text-[14px]">
             {navbarItem.map((item) => (
               <div
                 key={item.id}
@@ -28,7 +35,7 @@ const Navbar = () => {
               </div>
             ))}
           </div>
-          <div className="md:w-[150px] md:h-[42px] w-[170px] h-[42px] mx-auto my-6">
+          <div className="md:w-[150px] md:h-[42px] w-[170px] h-[42px] text-[14px] mx-auto md:mx-0 my-6">
             <Button title="Go To App" />
           </div>
         </div>
