@@ -45,7 +45,7 @@ const Partners = () => {
           </div>
           <div className="flex justify-between items-center">
             <div className="text-xs text-white/75">
-              © 2022 Moviex. All rights reserved.
+              © 2023 LiveX. All rights reserved.
             </div>
             <div className="md:flex justify-between gap-2 text-[13px] text-white/75">
               {navbarItem.map((item) => (
