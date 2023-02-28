@@ -60,7 +60,14 @@ const Partners = () => {
           </div>
         </div>
         <div className="md:hidden text-center">
-          <h1 className="text-[42px] font-bold">Icon</h1>
+          {/* <h1 className="text-[42px] font-bold">Icon</h1> */}
+          <Image
+            src="/images/logo.png"
+            alt="LiveX"
+            width={200}
+            height={200}
+            className="object-contain h-[100px] cursor-pointer mx-auto"
+          />
           <div className="flex justify-center gap-2 mb-2">
             <Image
               src="/images/telegram.svg"

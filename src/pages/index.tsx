@@ -6,9 +6,9 @@ import Staking from "../components/Staking";
 import Swap from "../components/Swap";
 import Bridge from "../components/Bridge";
 import Partners from "../components/Partners";
-import FAQ from "../components/faq/FAQ";
 import AboutUs from "../components/aboutUs/AboutUs";
 import Banner from "../components/Banner";
+import FAQ from "../components/FAQ";
 
 export default function Home() {
   return (

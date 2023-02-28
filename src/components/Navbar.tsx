@@ -20,11 +20,8 @@ const Navbar = () => {
             alt=""
             width={200}
             height={200}
-            className="object-contain h-[100px] cursor-pointer"
+            className="object-contain h-[100px] cursor-pointer mx-auto"
           />
-          {/* <h1 className="w-[162px] h-[38px] bg-white/10 text-center mx-auto mt-9">
-            ICON
-          </h1> */}
           <div className="flex justify-between font-bold text-[14px]">
             {navbarItem.map((item) => (
               <div
