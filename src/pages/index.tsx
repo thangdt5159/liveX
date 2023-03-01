@@ -9,21 +9,28 @@ import Partners from "../components/Partners";
 import AboutUs from "../components/aboutUs/AboutUs";
 import Banner from "../components/Banner";
 import FAQ from "../components/FAQ";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <main className="bg-[#1f2227] text-white font-display">
-      <Navbar />
-      <Landing />
-      <Banner />
-      {/* <Section1 /> */}
-      {/* <AboutUs /> */}
-      <Roadmap />
-      <Staking />
-      <Swap />
-      <Bridge />
-      <FAQ />
-      <Partners />
-    </main>
+    <>
+      <Head>
+        <title>Live X</title>
+        <link rel="icon" href="/images/logo.png" />
+      </Head>
+      <main className="bg-[#1f2227] text-white font-display">
+        <Navbar />
+        <Landing />
+        <Banner />
+        {/* <Section1 /> */}
+        {/* <AboutUs /> */}
+        <Roadmap />
+        <Staking />
+        <Swap />
+        <Bridge />
+        <FAQ />
+        <Partners />
+      </main>
+    </>
   );
 }
