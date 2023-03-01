@@ -21,14 +21,6 @@ module.exports = {
           "0%, 100%": { transform: "translateY(-30px)" },
           "50%": { transform: "translateY(100px)" },
         },
-        slide1: {
-          "0%": { transform: "translateX(1488px)" },
-          "100%": { transform: "translateX(-1488px)" },
-        },
-        slide2: {
-          "0%": { transform: "translateX(130%)" },
-          "100%": { transform: "translateX(-270%)" },
-        },
         moveBg: {
           "0%": {
             "background-size": "200% 200%",
@@ -65,8 +57,6 @@ module.exports = {
       animation: {
         bouLeft: "bouLeft 9s ease infinite",
         bouRight: "bouRight 9s ease infinite",
-        slide1: "slide1 60s linear infinite",
-        slide2: "slide2 60s linear infinite",
         moveBg: "moveBg 5s linear infinite",
       },
     },
