@@ -1,46 +1,70 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Button from "./common/Button";
 
 const Landing = () => {
+  const img1Ref = useRef<any>(null);
+  const img2Ref = useRef<any>(null);
+  const [mousePos, setMousePos] = useState<any>({});
+
+  useEffect(() => {
+    const followingImg1 = img1Ref.current;
+    const followingImg2 = img2Ref.current;
+
+    const handleMouseMoving = (e: any) => {
+      followingImg1.style.transform = `translate(${e.clientX / 50}px,${
+        e.clientY / 50
+      }px)`;
+      followingImg2.style.transform = `translate(-${e.clientX / 50}px,-${
+        e.clientY / 50
+      }px)`;
+    };
+
+    window.addEventListener("mousemove", handleMouseMoving);
+
+    return () => window.removeEventListener("mousemove", handleMouseMoving);
+  }, [mousePos]);
+
   return (
     <section className="border-b border-white/10">
-      <div className="relative border-x border-white/10 md:w-[1488px] w-[90%] md:min-h-[110px] mx-auto pt-[80px] before:bg-cornerTriangle before:w-[12px] before:h-[11px] before:bg-no-repeat before:bg-contain before:-top-[5px] before:-left-[6px] before:absolute after:bg-cornerTriangle after:w-[12px] after:h-[11px] after:bg-no-repeat after:bg-contain after:-top-[5px] after:-right-[7px] after:absolute">
+      <div className="relative border-x border-white/10 md:w-[1488px] w-[90%] md:min-h-[110px] mx-auto md:pt-[80px] pt-[10px] before:bg-cornerTriangle before:w-[12px] before:h-[11px] before:bg-no-repeat before:bg-contain before:-top-[5px] before:-left-[6px] before:absolute after:bg-cornerTriangle after:w-[12px] after:h-[11px] after:bg-no-repeat after:bg-contain after:-top-[5px] after:-right-[7px] after:absolute">
         <Image
           src="/images/landingBlur1.png"
           alt=""
           width={236}
           height={180}
-          className="hidden absolute top-[100px] -left-[233px]"
+          className="absolute top-[100px] right-0 md:-left-[233px]"
         />
         <Image
           src="/images/landingBlur2.png"
           alt=""
           width={251}
           height={259}
-          className="hidden absolute top-[70px] -right-[80px]"
+          className="absolute top-[70px] right-0 md:-right-[80px]"
         />
         <Image
           src="/images/landingBlur3.png"
           alt=""
           width={275}
           height={283}
-          className="hidden absolute top-[430px] left-[60px]"
+          className="hidden md:block absolute top-[45%] left-[100px]"
+          ref={img1Ref}
         />
         <Image
           src="/images/landingBlur4.png"
           alt=""
           width={336}
           height={220}
-          className="hidden absolute top-[360px] right-[90px]"
+          className="hidden md:block absolute top-[40%] right-[120px]"
+          ref={img2Ref}
         />
 
         <div className="w-[90%] mx-auto relative">
           <div className="md:w-[55%] mx-auto text-center">
-            <h1 className="uppercase text-[60px] font-bold leading-[60px] my-10 text-transparent bg-clip-text bg-gradient-to-r from-[#D98639] via-[#FF3D00] to-[#D98639] animate-moveBg bg-[200%]">
+            <h1 className="uppercase text-[42px] leading-[46px] md:text-[60px] font-bold md:leading-[60px] md:my-10 my-7 text-transparent bg-clip-text bg-gradient-to-r from-[#D98639] via-[#FF3D00] to-[#D98639] animate-moveBg bg-[200%]">
               Create content and earn $LVX!
             </h1>
-            <p className="text-white/75 text-[15px] mb-4">
+            <p className="text-white/75 md:text-[15px] mb-4 font-btn text-[13px]">
               Welcome to LiveX, where we explore the frontiers of crypto and
               technology innovations. This is a place where you can relax,
               create your favorite content and get paid in $LVX. Creative to
@@ -63,7 +87,7 @@ const Landing = () => {
               alt=""
               width={1600}
               height={1600}
-              className="mt-[42px] rounded-[12px]"
+              className="md:mt-[-220px] rounded-[12px]"
             />
           </div>
         </div>

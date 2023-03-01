@@ -32,7 +32,7 @@ const Navbar = () => {
               </div>
             ))}
           </div>
-          <div className="md:w-[150px] md:h-[42px] w-[170px] h-[42px] text-[14px] mx-auto md:mx-0 my-6">
+          <div className="md:w-[150px] md:h-[42px] w-[170px] h-[42px] text-[14px] mx-auto md:mx-0 md:my-6 mb-4">
             <Button title="Go To App" />
           </div>
         </div>
